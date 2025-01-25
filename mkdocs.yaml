@@ -1,0 +1,40 @@
+site_name: My Library
+theme:
+  name: material
+  features:
+  - navigation.tabs
+  - navigation.tabs.sticky
+  palette:
+  - scheme: default
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - scheme: slate
+    primary: indigo
+    accent: indigo
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode
+
+nav:
+- Home: index.md
+- Reference:
+  - s3: reference/s3.md
+  - hdfs: reference/hdfs.md
+  - parquet: reference/parquet.md
+- IO: io.md
+# - API: api.md
+
+# mkdocs.yml
+plugins:
+- search
+- autorefs
+- mkdocstrings:
+    handlers:
+      python:
+        paths: [ src ]
+        options:
+          show_source: true
+          show_root_heading: true
