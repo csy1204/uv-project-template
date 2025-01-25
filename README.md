@@ -71,3 +71,11 @@ uv venv
 uv add --dev mkdocs-material pytest pre-commit ruff pytest-cov "mkdocstrings[python]"
 ```
 
+## Documentation
+
+- mkdocs 기반의 문서 자동화
+- https://github.com/mkdocstrings/mkdocstrings
+
+## Acknowledgment
+
+- [cookiecutter-uv](https://fpgmaas.github.io/cookiecutter-uv/)에서 영감을 많이 받았습니다.
